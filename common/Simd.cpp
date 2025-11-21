@@ -10,7 +10,6 @@
  */
 
 #include <config.h>
-
 #include <Simd.hpp>
 
 #if ENABLE_SIMD

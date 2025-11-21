@@ -5,13 +5,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "Uri.hpp"
-#include <common/Util.hpp>
-#include <common/Log.hpp>
 
 #include <Poco/URI.h>
+
+#include <common/Log.hpp>
+#include <common/Util.hpp>
+#include <config.h>
 
 const std::string Uri::Reserved = ",/?:@&=+$#";
 

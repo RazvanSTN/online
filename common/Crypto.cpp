@@ -9,19 +9,19 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
-#include <Poco/DigestStream.h>
-#include <Poco/Base64Decoder.h>
-#include <Poco/DateTimeParser.h>
-#include <Poco/Crypto/RSADigestEngine.h>
-
-#include <fstream>
-#include <sstream>
-#include <iostream>
-
-#include "Log.hpp"
 #include "Crypto.hpp"
+#include "Log.hpp"
+
+#include <Poco/Base64Decoder.h>
+#include <Poco/Crypto/RSADigestEngine.h>
+#include <Poco/DateTimeParser.h>
+#include <Poco/DigestStream.h>
+
+#include <config.h>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+
 #if ENABLE_SUPPORT_KEY
 #include "support-public-key.hpp"
 #endif

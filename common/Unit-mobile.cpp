@@ -5,9 +5,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "Unit.hpp"
+
+#include <config.h>
 
 UnitBase** UnitBase::linkAndCreateUnit([[maybe_unused]] UnitType type,
                                        [[maybe_unused]] const std::string& unitLibPath)

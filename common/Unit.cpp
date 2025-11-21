@@ -5,31 +5,27 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
+#include "Log.hpp"
 #include "Unit.hpp"
+#include "Util.hpp"
+
+#include <Poco/Util/Application.h>
+#include <Poco/Util/LayeredConfiguration.h>
 
 #include <cassert>
-#include <condition_variable>
-#include <csignal>
-#include <iostream>
-#include <mutex>
-#include <sstream>
-#include <thread>
-
-#include <sysexits.h>
-
-#include <Poco/Util/LayeredConfiguration.h>
-#include <Poco/Util/Application.h>
-
-#include "Log.hpp"
-#include "Util.hpp"
-#include <test/testlog.hpp>
-
 #include <common/JsonUtil.hpp>
 #include <common/Message.hpp>
 #include <common/SigUtil.hpp>
 #include <common/StringVector.hpp>
+#include <condition_variable>
+#include <config.h>
+#include <csignal>
+#include <iostream>
+#include <mutex>
+#include <sstream>
+#include <sysexits.h>
+#include <test/testlog.hpp>
+#include <thread>
 
 std::atomic<UnitKit *>GlobalKit = nullptr;
 std::atomic<UnitWSD *>GlobalWSD = nullptr;

@@ -9,13 +9,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
+#include "Log.hpp"
 #include "SigUtil.hpp"
 
+#include <config.h>
 #include <string>
-
-#include "Log.hpp"
 
 namespace SigUtil
 {

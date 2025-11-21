@@ -13,13 +13,13 @@
 
 #if MOBILEAPP
 
+#include "Log.hpp"
 #include "MobileApp.hpp"
 
 #include <cassert>
 #include <map>
 #include <mutex>
 
-#include "Log.hpp"
 
 static std::map<unsigned, DocumentData*> idToDocDataMap;
 static std::mutex idToDocDataMapMutex;

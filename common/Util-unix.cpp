@@ -9,14 +9,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+#include <common/Log.hpp>
+#include <common/Util.hpp>
 #include <config.h>
-
 #include <fcntl.h>
 #include <time.h>
 #include <unistd.h>
-
-#include <common/Log.hpp>
-#include <common/Util.hpp>
 
 namespace Util
 {

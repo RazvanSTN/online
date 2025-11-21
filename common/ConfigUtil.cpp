@@ -9,19 +9,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
-#include <ConfigUtil.hpp>
-
-#include <Util.hpp>
-
-#include <cassert>
-#include <string>
-#include <sstream>
-#include <unordered_map>
-
 #include <Poco/Util/AbstractConfiguration.h>
 #include <Poco/Util/XMLConfiguration.h>
+
+#include <ConfigUtil.hpp>
+#include <Util.hpp>
+#include <cassert>
+#include <config.h>
+#include <sstream>
+#include <string>
+#include <unordered_map>
 
 namespace ConfigUtil
 {

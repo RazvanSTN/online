@@ -12,9 +12,8 @@
  * This is a very tiny helper to allow overlay mounting.
  */
 
-#include <config.h>
-
 #include <cerrno>
+#include <config.h>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>

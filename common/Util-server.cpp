@@ -8,11 +8,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-#include <config.h>
 
 #include "Log.hpp"
 #include "StringVector.hpp"
 #include "Util.hpp"
+
+#include <Poco/Exception.h>
+
+#include <config.h>
+#include <dirent.h>
+#include <fstream>
+#include <iomanip>
+#include <spawn.h>
 
 #ifdef __linux__
 #include <sys/time.h>
@@ -24,13 +31,7 @@
 extern char** environ;
 #endif
 
-#include <dirent.h>
-#include <spawn.h>
 
-#include <fstream>
-#include <iomanip>
-
-#include <Poco/Exception.h>
 
 namespace
 {

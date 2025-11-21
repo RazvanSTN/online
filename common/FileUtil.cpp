@@ -9,31 +9,28 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "FileUtil.hpp"
 
+#include <Poco/File.h>
+#include <Poco/Path.h>
+
+#include <chrono>
 #include <common/Anonymizer.hpp>
 #include <common/Log.hpp>
 #include <common/Unit.hpp>
 #include <common/Util.hpp>
-
-#include <exception>
-#include <stdexcept>
-
-#include <fcntl.h>
-#include <chrono>
+#include <config.h>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <exception>
+#include <fcntl.h>
 #include <filesystem>
 #include <fstream>
 #include <mutex>
 #include <set>
+#include <stdexcept>
 #include <string>
-
-#include <Poco/File.h>
-#include <Poco/Path.h>
 
 namespace FileUtil
 {

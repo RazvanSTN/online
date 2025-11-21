@@ -9,12 +9,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-#include <config_version.h>
-
 #include "RegexUtil.hpp"
 
 #include <Poco/RegularExpression.h>
+
+#include <config.h>
+#include <config_version.h>
 
 namespace RegexUtil
 {

@@ -9,23 +9,40 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
-#include "SigUtil.hpp"
+#include "Common.hpp"
+#include "Log.hpp"
 #include "SigHandlerTrap.hpp"
+#include "SigUtil.hpp"
 #include "Util.hpp"
 
-#if !defined(__ANDROID__) && !defined(__EMSCRIPTEN__)
-#  include <execinfo.h>
-#endif
+#include <Socket.hpp>
+#include <array>
+#include <atomic>
+#include <cassert>
+#include <chrono>
+#include <config.h>
 #include <csignal>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
 #include <fcntl.h>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
 #include <poll.h>
+#include <sstream>
+#include <string>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/uio.h>
 #include <sys/wait.h>
+#include <test/testlog.hpp>
+#include <thread>
 #include <unistd.h>
+
+#if !defined(__ANDROID__) && !defined(__EMSCRIPTEN__)
+#  include <execinfo.h>
+#endif
 
 #if !defined(ANDROID) && !defined(IOS) && !defined(__FreeBSD__)
 #  include <sys/prctl.h>
@@ -33,25 +50,6 @@
 #if defined(__FreeBSD__)
 #  include <sys/procctl.h>
 #endif
-
-#include <atomic>
-#include <cassert>
-#include <chrono>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <fstream>
-#include <iomanip>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <thread>
-#include <array>
-
-#include <Socket.hpp>
-#include "Common.hpp"
-#include "Log.hpp"
-#include <test/testlog.hpp>
 
 namespace
 {

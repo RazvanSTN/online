@@ -9,13 +9,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-#include <Socket.hpp>
+#include "Log.hpp"
 #include "SigUtil.hpp"
 
-#include <string>
 
-#include "Log.hpp"
+#include <Socket.hpp>
+#include <config.h>
+#include <string>
 
 namespace
 {

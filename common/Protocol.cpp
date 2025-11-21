@@ -9,17 +9,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "Protocol.hpp"
 
+#include <LibreOfficeKit/LibreOfficeKitEnums.h>
+#include <config.h>
 #include <cstring>
 #include <map>
 #include <string>
 #include <string_view>
 
 #define LOK_USE_UNSTABLE_API
-#include <LibreOfficeKit/LibreOfficeKitEnums.h>
 
 namespace COOLProtocol
 {

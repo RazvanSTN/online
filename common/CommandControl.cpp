@@ -9,14 +9,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "CommandControl.hpp"
 
 #include <common/ConfigUtil.hpp>
 #include <common/RegexUtil.hpp>
 #include <common/Util.hpp>
-
+#include <config.h>
 #include <string>
 #include <unordered_set>
 

@@ -9,16 +9,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#include <config.h>
-
 #include "Session.hpp"
-
-#include <common/Anonymizer.hpp>
-#include <common/JsonUtil.hpp>
-#include <common/Log.hpp>
-#include <common/Protocol.hpp>
-#include <common/Uri.hpp>
-#include <common/Util.hpp>
 
 #include <Poco/Exception.h>
 #include <Poco/JSON/Object.h>
@@ -26,6 +17,13 @@
 #include <Poco/String.h>
 #include <Poco/URI.h>
 
+#include <common/Anonymizer.hpp>
+#include <common/JsonUtil.hpp>
+#include <common/Log.hpp>
+#include <common/Protocol.hpp>
+#include <common/Uri.hpp>
+#include <common/Util.hpp>
+#include <config.h>
 #include <sstream>
 
 using namespace COOLProtocol;
